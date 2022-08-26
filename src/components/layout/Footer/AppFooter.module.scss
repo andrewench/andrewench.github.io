@@ -1,0 +1,24 @@
+.Box {
+  @apply pt-20 pb-10 bg-zinc-900 flex flex-col items-center;
+}
+
+.ProfileLink {
+  @apply relative flex items-center gap-2 text-xl border-2 border-slate-400 px-6 py-2 text-white after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:bg-slate-400 after:opacity-10;
+
+  &::after {
+    width: 70%;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  }
+}
+
+.Build {
+  @apply text-slate-300 mt-10;
+}
+
+.Source {
+  @apply flex items-center gap-2 text-slate-400 mt-4 hover:underline;
+}
+
+.Copyright {
+  @apply mt-20 text-slate-500 text-sm;
+}

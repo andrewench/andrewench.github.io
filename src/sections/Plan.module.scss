@@ -1,0 +1,9 @@
+.Box {
+  @apply relative px-20 before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:backdrop-blur-lg;
+  background: url('../assets/img/plan.jpg') fixed;
+  background-size: cover;
+
+  &::before {
+    background-color: #000000af;
+  }
+}

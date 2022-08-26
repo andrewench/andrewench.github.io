@@ -1,0 +1,32 @@
+.Box {
+  @apply inline-flex text-slate-900 text-base;
+}
+
+.PS1 {
+  @apply relative px-4 gap-2 items-center rounded-l-full inline-flex after:content-[''] after:absolute after:w-10 after:h-full after:-right-10 after:top-0 after:border-solid after:border-white after:border-transparent after:border-l-white bg-white;
+
+  &::after {
+    border-width: 16px;
+  }
+}
+
+.User {
+  @apply text-slate-800 py-1;
+}
+
+.GitBranch {
+  clip-path: polygon(80% 0%, 100% 50%, 80% 100%, 0% 100%, 20% 50%, 0% 0%);
+  @apply flex items-center gap-1 bg-emerald-300 h-full px-6 py-1;
+}
+
+.CommandLine {
+  @apply flex items-center font-medium pl-8 pr-2 text-lg;
+}
+
+.CommandLine_light {
+  @apply text-slate-100;
+}
+
+.CommandLine_dark {
+  @apply text-slate-700;
+}

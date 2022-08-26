@@ -1,0 +1,13 @@
+.Box {
+  @apply bg-slate-200;
+}
+
+.PortfolioList {
+  @apply flex mt-10 gap-10;
+}
+
+.ImageDescription {
+  width: 300px;
+  font-family: 'Inter', sans-serif;
+  @apply text-base text-slate-700;
+}
