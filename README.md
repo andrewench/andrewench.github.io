@@ -1,5 +1,7 @@
 ![Poster image](./assets/img/page.png)
 
-<center>Welcome to the personal web page.</center>
+<center>
+Welcome to the personal web page.
 
-<center>See website: [andrewench.github.io](https://andrewench.github.io)</center>
+See website: [andrewench.github.io](https://andrewench.github.io)
+</center>
