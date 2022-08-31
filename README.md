@@ -1,4 +1,4 @@
-![Poster image](./src/assets/img/page.png)
+![Poster image](./assets/img/page.png)
 
 <center>Welcome to the personal web page.</center>
 
