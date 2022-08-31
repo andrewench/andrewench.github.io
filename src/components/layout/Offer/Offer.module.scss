@@ -1,9 +1,15 @@
 .Box {
-  background: url('../../../assets//img/preview.jpg') fixed;
+  background: url('../../../assets/img/preview.jpg') fixed;
   @apply relative h-screen flex flex-col items-center justify-center bg-cover before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-lg;
 
   &::before {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(70,70,70,0.8015581232492998) 63%, rgba(38,38,40,0.896796218487395) 77%, rgba(24,24,27,1) 90%);
+    background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0),
+      rgba(42, 41, 41, 0.8) 63%,
+      rgba(38, 38, 40, 0.897) 77%,
+      #18181b 90%
+    );
   }
 
   & > ion-icon {
