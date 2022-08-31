@@ -13,13 +13,18 @@
         scrollState = window.scrollY;
 
         if (dirTo === 1) {
-          header.classList.add('hidden');
-        } else {
-          header.classList.remove('hidden');
-        }
+          if (header.classList.contains('animate__fadeIn'))
+            header.classList.remove('animate__fadeIn');
 
-        if (!header.classList.contains('sticky'))
-          header.classList.add('sticky');
+          header.classList.add('animate__fadeOut');
+          header.onanimationend = () => {
+            header.classList.add('hidden', 'sticky');
+          };
+        } else {
+          header.onanimationend = null;
+          header.classList.remove('hidden', 'animate__fadeOut');
+          header.classList.add('animate__fadeIn');
+        }
       } else {
         if (header.classList.contains('sticky'))
           header.classList.remove('sticky');

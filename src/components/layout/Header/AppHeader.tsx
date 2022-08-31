@@ -2,10 +2,11 @@ import React from 'react';
 import { AppNavHashLink } from '../../common/AppUI';
 import Logo from '../../ui/Logo';
 import styles from './AppHeader.module.scss';
+import 'animate.css';
 
 const AppHeader = () => {
   return (
-    <div className={`${styles.Box} App-Header`}>
+    <div className={`${styles.Box} App-Header animate__animated`}>
       <Logo title='andrewench' description='> Person.init();' />
 
       <div className={styles.Links}>
